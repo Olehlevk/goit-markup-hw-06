@@ -47,84 +47,83 @@
             </li>
           </ul>
         </address>
-        <button class="menu-btn" type="button">
+        <button class="menu-btn" type="button" data-menu-open>
           <svg class="menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mob-menu">
-          <div>
-            <button class="mob-menu-btn" type="button">
-              <svg class="mob-close-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
+      <div class="mob-menu" data-menu>
+        <div>
+          <button class="mob-menu-btn" type="button" data-menu-close>
+            <svg class="mob-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-            <nav class="mob-nav">
-              <ul class="mob-ul">
-                <li class="mob-item">
-                  <a class="mob-menu-link" href="./index.html">Studio</a>
-                </li>
-                <li class="mob-item">
-                  <a class="mob-menu-link" href="">Portfolio</a>
-                </li>
-                <li class="mob-item">
-                  <a class="mob-menu-link" href="">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="mob-nav">
+            <ul class="mob-ul">
+              <li class="mob-item">
+                <a class="mob-menu-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-          <div>
-            <address class="mob-address">
-              <ul class="mob-contacts">
-                <li class="mob-adress-link">
-                  <a class="mob-link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="mob-adress-link">
-                  <a class="mob-link" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-              </ul>
-            </address>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-contacts">
+              <li class="mob-adress-link">
+                <a class="mob-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-adress-link">
+                <a class="mob-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
 
-            <div class="mob-socials">
-              <ul class="mob-socials-list">
-                <li class="mob-icons-item">
-                  <a href="" target="_blank" class="mob-soc-link">
-                    <svg class="mob-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="mob-icons-item">
-                  <a href="" target="_blank" class="mob-soc-link">
-                    <svg class="mob-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="mob-icons-item">
-                  <a href="" target="_blank" class="mob-soc-link">
-                    <svg class="mob-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="mob-icons-item">
-                  <a href="" target="_blank" class="mob-soc-link">
-                    <svg class="mob-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="mob-socials">
+            <ul class="mob-socials-list">
+              <li class="mob-icons-item">
+                <a href="" target="_blank" class="mob-soc-link">
+                  <svg class="mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icons-item">
+                <a href="" target="_blank" class="mob-soc-link">
+                  <svg class="mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icons-item">
+                <a href="" target="_blank" class="mob-soc-link">
+                  <svg class="mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icons-item">
+                <a href="" target="_blank" class="mob-soc-link">
+                  <svg class="mob-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -633,7 +632,7 @@
                   <source
                     media="(min-width: 768px )"
                     srcset="
-                      ./images/portfolio-5-tab.jpg   1x,
+                      ./images/portfolio-5-tab.jpg    1x,
                       ./images/portfolio-5-tab@2x.jpg 2x
                     "
                   />
@@ -707,7 +706,7 @@
         <div class="footer-logo-container">
           <a class="logo" href="./index.html"
             >Web<span class="footer-logo">Studio</span></a
-          >
+          >å
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -778,6 +777,7 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
+
         <form class="modal-form">
           <div class="label-container">
             <label class="label-user-information" for="user-name">Name</label>
@@ -800,7 +800,7 @@
               <input
                 class="input-data"
                 name="user-phone"
-                type="phone"
+                type="tel"
                 id="phone"
               />
               <svg class="input-icon" width="18" height="24">
@@ -858,5 +858,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
